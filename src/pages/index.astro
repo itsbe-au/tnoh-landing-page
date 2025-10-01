@@ -1,16 +1,133 @@
 ---
-
+import Layout from '../layouts/Layout.astro'
 ---
+<Layout>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+    <!-- Hero Section -->
+    <section class="text-center mt-8 mb-16">
+
+        <div class="font-serif">welcome to</div>
+        <h1 class="text-4xl md:text-6xl text-white tracking-tight shiny">
+            The Nook on Hopkins
+        </h1>
+
+    </section>
+
+    <!-- Menu Section -->
+
+    <!-- Online Ordering Coming Soon -->
+    <section class="text-center mb-16">
+        <div class="bg-nook-700/50 rounded-lg p-8">
+            <h3 class="text-2xl mb-4 text-nook-100">Online ordering coming soon!</h3>
+            <p class="text-nook-300 mb-6">
+                We're working hard to bring you the convenience of online ordering.
+                In the meantime, give us a call or drop by in person.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/menu" class="bg-nook-600 hover:bg-nook-500 px-6 py-3 rounded-lg transition-colors font-medium">
+                    View Our Menu
+                </a>
+                <a href="tel:+61345209318" class="bg-nook-600 hover:bg-nook-500 px-6 py-3 rounded-lg transition-colors font-medium">
+                    Call to Order
+                </a>
+                <a href="mailto:mailthenookonhopkins@gmail.com" class="border border-nook-600 hover:bg-nook-600 px-6 py-3 rounded-lg transition-colors font-medium">
+                    Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Opening Hours -->
+    <section class="mb-16">
+        <h2 class="text-3xl mb-8 text-center text-nook-100">Opening Hours</h2>
+        <div class="max-w-md mx-auto bg-nook-900 rounded-lg p-6">
+            <div class="space-y-3">
+                <div class="day-hours">
+                    <span>Monday</span>
+                    <span class="block text-right">
+                    <div class="text-nook-300">6:00am — 3:00pm</div>
+                    <div class="text-nook-600"><span>Kitchen:</span> 6:00am — 3:00pm</div>
+                    </span>
+                </div>
+                <div class="day-hours">
+                    <span>Tuesday</span>
+                    <span class="block text-right">
+                    <div class="text-nook-300">CLOSED</div>
+                    </span>
+                </div>
+                <div class="day-hours">
+                    <span>Wednesday</span>
+                    <span class="block text-right">
+                    <div class="text-nook-300">6:00am — 3:00pm</div>
+                    <div class="text-nook-500"><span>Kitchen:</span> 6:00am — 3:00pm</div>
+                    </span>
+                </div>
+                <div class="day-hours">
+                    <span>Thursday</span>
+                    <span class="block text-right">
+                    <div class="text-nook-300">6:00am — 3:00pm</div>
+                    <div class="text-nook-500"><span>Kitchen:</span> 6:00am — 3:00pm</div>
+                    </span>
+                </div>
+                <div class="day-hours">
+                    <span>Friday</span>
+                    <span class="block text-right">
+                    <div class="text-nook-300">6:00am — 3:00pm</div>
+                    <div class="text-nook-500"><span>Kitchen:</span> 6:00am — 3:00pm</div>
+                    </span>
+                </div>
+                <div class="day-hours">
+                    <span>Saturday</span>
+                    <span class="block text-right">
+                    <div class="text-nook-300">7:00am — 3:00pm</div>
+                    <div class="text-nook-500"><span>Kitchen:</span> 6:00am — 3:00pm</div>
+                    </span>
+                </div>
+                <div class="day-hours">
+                    <span>Sunday</span>
+                    <span class="block text-right">
+                    <div class="text-nook-300">7:00am — 3:00pm</div>
+                    <div class="text-nook-500"><span>Kitchen:</span> 6:00am — 3:00pm</div>
+                    </span>
+                </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-nook-700 text-center">
+                <p class="text-sm text-nook-400">Public holidays may vary</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="mb-16">
+        <h2 class="text-3xl mb-8 text-center text-nook-100">Visit Us</h2>
+        <div class="text-center gap-8">
+            <!-- Contact Details -->
+            <div class="bg-nook-900 rounded-lg p-6">
+                <h3 class="text-xl mb-4 text-nook-100">Contact Details</h3>
+                <div class="space-y-3">
+                    <div>
+                        <p class="text-sm text-nook-400">Address</p>
+                        <p class="text-nook-200">8 Hopkins Road, Warrnambool VIC 3280</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-nook-400">Phone</p>
+                        <p class="text-nook-200">(03) 5562 1234</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-nook-400">Email</p>
+                        <p class="text-nook-200">hello@thenookonhopkins.com.au</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-nook-400">Follow Us</p>
+                        <div class="flex flex-auto justify-center space-x-4 mx-auto">
+                            <a href="https://instagr.am/thenookonhopkins" class="text-nook-300 hover:text-nook-100 transition-colors">Instagram</a>
+                            <a href="https://facebook.com/thenookonhopkins" class="text-nook-300 hover:text-nook-100 transition-colors">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>

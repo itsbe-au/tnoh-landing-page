@@ -1,0 +1,21 @@
+---
+
+
+export interface Props {
+    name: string;
+    description?: string;
+    price: string | number;
+}
+
+const { name, description, price } = Astro.props;
+---
+
+<li class="flex justify-between">
+    <div>
+        <div>{name}</div>
+        {description && (
+            <div class="text-xs text-nook-400">{description}</div>
+        )}
+    </div>
+    <span class="text-nook-300">${price}</span>
+</li>

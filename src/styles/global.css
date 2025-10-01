@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-nook: oklch(6.7205% 0 none);
+  --color-nook-50: oklch(78.763% 0.00686 208.78);
+  --color-nook-100: oklch(75.512% 0.00803 207.13);
+  --color-nook-200: oklch(69.231% 0.01044 204.88);
+  --color-nook-300: oklch(62.586% 0.01212 211.04);
+  --color-nook-400: oklch(55.776% 0.01214 204.05);
+  --color-nook-500: oklch(48.241% 0.01012 205.83);
+  --color-nook-600: oklch(40.771% 0.00801 208.75);
+  --color-nook-700: oklch(32.846% 0.0071 211.04);
+  --color-nook-800: oklch(24.464% 0.00445 196.98);
+  --color-nook-900: oklch(15.315% 0.001 196.98);
+  --color-nook-950: oklch(6.7205% 0 none);
+
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Barlow Semi Condensed", system-ui, sans-serif;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+@layer base {
+  body {
+    @apply bg-nook-900 text-nook-50 font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-semibold;
+  }
+}
+
+@layer components {
+  .header {
+    @apply p-4;
+  }
+
+  .content {
+    @apply max-w-screen-lg mx-auto px-4;
+  }
+
+  .day-hours {
+    @apply flex justify-between min-h-12
+  }
+
+  .shiny {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.15), 
+                 0 0 40px rgba(255, 255, 255, 0.08);
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.15), 
+                   0 0 40px rgba(255, 255, 255, 0.08);
+    }
+    100% {
+      text-shadow: 0 0 25px rgba(255, 255, 255, 0.2), 
+                   0 0 50px rgba(255, 255, 255, 0.12);
+    }
+  }
+}
