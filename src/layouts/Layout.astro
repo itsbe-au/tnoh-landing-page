@@ -13,10 +13,10 @@ const LOGO_SCALE = 96
 	</head>
 	<body>
 		<header class="header">
-		    <img src="tnoh-logo.svg" alt="The Nook on Hopkins logo" height={LOGO_SCALE} width={LOGO_SCALE} class="mx-auto" />
+		    <img src={`${import.meta.env.BASE_URL}/tnoh-logo.svg`} alt="The Nook on Hopkins logo" height={LOGO_SCALE} width={LOGO_SCALE} class="mx-auto" />
 		</header>
 		<main class="content">
 		    <slot />
 		</main>
-	</bod>
+	</body>
 </html>
