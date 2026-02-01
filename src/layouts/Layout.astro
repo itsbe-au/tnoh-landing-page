@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css'
-const LOGO_SCALE = 96
+const LOGO_SCALE = 256
 ---
 
 <html lang="en">
@@ -12,8 +12,8 @@ const LOGO_SCALE = 96
 		<title>The Nook on Hopkins | Coffee &bull; Food &bull; Catering</title>
 	</head>
 	<body>
-		<header class="header">
-		    <img src={`${import.meta.env.BASE_URL}/tnoh-logo.svg`} alt="The Nook on Hopkins logo" height={LOGO_SCALE} width={LOGO_SCALE} class="mx-auto" />
+		<header class="header my-16">
+		    <img src={`/tnoh-logo.svg`} alt="The Nook on Hopkins logo" height={LOGO_SCALE} width={LOGO_SCALE} class="mx-auto" />
 		</header>
 		<main class="content">
 		    <slot />

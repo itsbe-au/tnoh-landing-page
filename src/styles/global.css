@@ -4,17 +4,17 @@
 
 @theme {
   --color-nook: oklch(6.7205% 0 none);
-  --color-nook-50: oklch(78.763% 0.00686 208.78);
-  --color-nook-100: oklch(75.512% 0.00803 207.13);
-  --color-nook-200: oklch(69.231% 0.01044 204.88);
-  --color-nook-300: oklch(62.586% 0.01212 211.04);
-  --color-nook-400: oklch(55.776% 0.01214 204.05);
-  --color-nook-500: oklch(48.241% 0.01012 205.83);
-  --color-nook-600: oklch(40.771% 0.00801 208.75);
-  --color-nook-700: oklch(32.846% 0.0071 211.04);
-  --color-nook-800: oklch(24.464% 0.00445 196.98);
-  --color-nook-900: oklch(15.315% 0.001 196.98);
-  --color-nook-950: oklch(6.7205% 0 none);
+  --color-nook-50: oklch(95% 0.008 208);
+  --color-nook-100: oklch(88% 0.01 208);
+  --color-nook-200: oklch(75% 0.012 208);
+  --color-nook-300: oklch(65% 0.014 208);
+  --color-nook-400: oklch(55% 0.015 208);
+  --color-nook-500: oklch(45% 0.012 208);
+  --color-nook-600: oklch(35% 0.01 208);
+  --color-nook-700: oklch(28% 0.008 208);
+  --color-nook-800: oklch(20% 0.006 208);
+  --color-nook-900: oklch(12% 0.004 208);
+  --color-nook-950: oklch(6% 0.002 208);
 
   --font-serif: "Fraunces", Georgia, serif;
   --font-sans: "Barlow Semi Condensed", system-ui, sans-serif;
