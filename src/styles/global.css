@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
@@ -17,7 +17,7 @@
   --color-nook-950: oklch(6% 0.002 208);
 
   --font-serif: "Fraunces", Georgia, serif;
-  --font-sans: "Barlow Semi Condensed", system-ui, sans-serif;
+  --font-sans: "Barlow", system-ui, sans-serif;
 
   --font-weight-light: 300;
   --font-weight-normal: 400;
@@ -39,6 +39,18 @@
   h6 {
     @apply font-serif font-semibold;
   }
+
+  a {
+    @apply no-underline relative transition-all duration-300;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 8px;
+    transition: text-decoration-color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    text-decoration-color: currentColor;
+  }
 }
 
 @layer components {
@@ -47,7 +59,7 @@
   }
 
   .content {
-    @apply max-w-screen-lg mx-auto px-4;
+    @apply max-w-screen-lg mx-auto px-1;
   }
 
   .day-hours {

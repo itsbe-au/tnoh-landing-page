@@ -1,22 +1,31 @@
 ---
-import '../styles/global.css'
-const LOGO_SCALE = 256
+import "../styles/global.css";
+const LOGO_SCALE = 256;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="generator" content={Astro.generator} />
-		<title>The Nook on Hopkins | Coffee &bull; Food &bull; Catering</title>
-	</head>
-	<body>
-		<header class="header my-16">
-		    <img src={`/tnoh-logo.svg`} alt="The Nook on Hopkins logo" height={LOGO_SCALE} width={LOGO_SCALE} class="mx-auto" />
-		</header>
-		<main class="content">
-		    <slot />
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>The Nook on Hopkins | Coffee &bull; Food &bull; Catering</title>
+  </head>
+  <body>
+    <header class="header my-16">
+      <img
+        src={`/tnoh-logo.svg`}
+        alt="The Nook on Hopkins logo"
+        height={LOGO_SCALE}
+        width={LOGO_SCALE}
+        class="mx-auto"
+      />
+    </header>
+    <main class="content">
+      <slot />
+    </main>
+  </body>
 </html>
